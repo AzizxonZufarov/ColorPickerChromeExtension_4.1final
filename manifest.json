@@ -1,0 +1,29 @@
+{
+  "name": "Color Picker Chrome Extension",
+  "description": "A color picker tool that extracts every pixel from the current screen and also saves recently used colors.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+      "default_popup": "index.html"
+  },
+  "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+9",
+          "mac": "Command+Shift+9"
+        }
+      }
+    },
+    "host_permissions" : [
+      "http://localhost/*",
+      "https://*/*",
+      "http://*"
+    ],
+    
+  "permissions": [ 
+    "tabs",
+    "storage",
+    "activeTab",
+     "scripting"
+  ]
+}
